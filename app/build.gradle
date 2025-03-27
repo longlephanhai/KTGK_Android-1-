@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace 'com.example.ktgk_23it1441'
-    compileSdk 34
+    compileSdk 35
 
     defaultConfig {
         applicationId "com.example.ktgk_23it1441"
@@ -37,6 +37,11 @@ android {
 }
 
 dependencies {
+    implementation libs.androidx.lifecycle.runtime.compose
+    implementation libs.androidx.activity.compose
+    implementation libs.retrofit
+    implementation libs.converter.gson
+    implementation libs.androidx.lifecycle.viewmodel.compose
 
     implementation libs.androidx.core.ktx
     implementation libs.androidx.lifecycle.runtime.ktx
